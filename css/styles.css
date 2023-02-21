@@ -113,6 +113,7 @@ h1{
 .card-body {
     margin: 0;
     padding: .25em;
+    background: none;
     justify-content: flex-start;
 }
 .card-body > span{
