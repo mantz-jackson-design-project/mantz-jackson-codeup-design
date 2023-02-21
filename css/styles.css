@@ -66,3 +66,7 @@
 h1{
     color: var(--color-primary-light);
 }
+#codeupLogo{
+    height: 105px;
+    width: 105px;
+}
