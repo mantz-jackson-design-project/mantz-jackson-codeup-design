@@ -63,10 +63,31 @@
     margin: 0;
     font: inherit;
 }
+
+* {
+    outline: solid 1px lime;
+}
+
 h1{
     color: var(--color-primary-light);
 }
+
+/*Changed dimensions of logo to fit navbar*/
 #codeupLogo{
-    height: 105px;
-    width: 105px;
+    height: 35px;
+    width: 35px;
+    margin-right: .75rem;
+}
+
+.icon-lg {
+    margin: auto .25rem;
+}
+
+.icon-sm {
+    margin: auto .25rem;
+}
+
+.card-body {
+    margin: 0;
+    padding: .25em;
 }
