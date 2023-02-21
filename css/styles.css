@@ -1,26 +1,17 @@
 :root {
     /* established color palette */
-    --color-primary-light: #4E596F;
-    --color-primary: #242A38;
-    --color-primary-dark: #1b1e2a;
+    --color-design: #e6563b;
+    --color-develop: #eb9d3a;
+    --color-support: #7cb06c;
+    --color-host: #00aba9;
 
-    --color-accent-light: #ff7d57;
-    --color-accent: #ff7d57;
-    --color-accent-dark: #ff7d57;
-
-    --color-neutral-light: #ff7d57;
-    --color-neutral: #ff7d57;
-    --color-neutral-dark: #ff7d57;
-
-    --color-white: #fff;
-    --color-accent-gradient: linear-gradient(to bottom right, var(--color-accent-light), var(--color-accent-dark));
-    --color-primary-gradient: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
-
+    --color-neutral-light: #f0f0f0;
+    --color-neutral: #e6e6e6;
+    --color-neutral-dark: #000;
 
     /* established font family, font weights, and font sizes */
-    --ff-primary: 'Montserrat', sans-serif;
-    --ff-heading: var(--ff-primary);
-    --ff-body: var(--ff-primary);
+    --ff-heading: 'Anton', sans-serif;
+    --ff-body: 'Abel', sans-serif;
 
     --fw-light: 300;
     --fw-medium: 500;
@@ -69,7 +60,6 @@
 }
 
 h1{
-    color: var(--color-primary-light);
 }
 
 /*Changed dimensions of logo to fit navbar*/
@@ -81,13 +71,62 @@ h1{
 
 .icon-lg {
     margin: auto .25rem;
+    color: var(--color-neutral-light);
+}
+.icon-set-sm{
+    height: 100%;
+    padding: .25rem 0;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+.icon-sm {
+    margin-left: .5rem;
+    padding: 0 .25rem;
+    height: 18px;
+    width: 18px;
+    border: #ff7d57;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--color-neutral-dark);
+}
+.icon-sm > span{
+    align-self: center;
+    font-family: var(--ff-heading);
+    font-size: var(--fs-400);
+}
+.icon-design{
+    background: var(--color-design);
+}
+.icon-develop{
+    background: var(--color-develop);
+}
+.icon-support{
+    background: var(--color-support);
+}
+.icon-host{
+    background: var(--color-host);
 }
 
-.icon-sm {
-    margin: auto .25rem;
-}
 
 .card-body {
     margin: 0;
     padding: .25em;
+    justify-content: flex-start;
+}
+.card-body > span{
+    font-size: var(--fs-400);
+    font-family: var(--ff-body);
+}
+.project-title{
+    padding: 0;
+    /* TODO trying to align to bottom of icons */
+    margin-top: .25em;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.img-lg{
+    border: solid 3px var(--color-neutral-light);
 }
