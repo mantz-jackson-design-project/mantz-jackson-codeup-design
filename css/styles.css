@@ -112,6 +112,8 @@ h1{
     display: flex;
     justify-content: center;
 }
+
+/*I added this while working on a different attempt to use breakpoints with the icon set. Leaving it for now, but this will probably not be needed: 21-FEB-23*/
 .icon-set {
     padding: 0;
 }
