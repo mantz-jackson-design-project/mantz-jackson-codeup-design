@@ -122,6 +122,7 @@ h1{
 
 /*Placeholder added 21-FEB-23*/
 .icon-set-lg {
+    border: 1pt solid red;
 }
 /*Styling for span elements within lg icons added 21-FEB-23*/
 .icon-lg > span{
