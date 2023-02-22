@@ -8,6 +8,7 @@
     --color-neutral-light: #f0f0f0;
     --color-neutral: #e6e6e6;
     --color-neutral-dark: #000;
+    --color-img-border: #d7d7d7;
 
     /* established font family, font weights, and font sizes */
     --ff-heading: 'Anton', sans-serif;
@@ -57,9 +58,10 @@
     font: inherit;
 }
 
-* {
+/** {
     outline: solid 1px lime;
-}
+}*/
+
 /*Changed nav bar font: 21-Feb-23*/
 .nav-container {
     font-family: var(--ff-body);
@@ -89,11 +91,17 @@ section {
 h1{
     font-family: var(--ff-heading);
     font-size: var(--fs-1000);
+    margin-bottom: 2rem;
 }
 
 h2 {
     font-family: var(--ff-body);
     font-size: var(--fs-400);
+    margin-bottom: 2rem;
+}
+
+hr {
+    margin-bottom: 3rem;
 }
 
 /*Changed sub-text font: Added 21-Feb-23*/
@@ -113,10 +121,10 @@ h2 {
 /*Styled large icons 21-FEB-23*/
 .icon-lg {
     color: var(--color-neutral-light);
-    min-height: 53px;
-    min-width: 53px;
-    max-height: 53px;
-    max-width: 53px;
+    min-height: 60px;
+    min-width: 60px;
+    max-height: 60px;
+    max-width: 60px;
     border: var(--color-neutral-light);
     border-radius: 100%;
     display: flex;
@@ -127,6 +135,10 @@ h2 {
 /*I added this while working on a different attempt to use breakpoints with the icon set. Leaving it for now, but this will probably not be needed: 21-FEB-23*/
 .icon-set {
     padding: 0;
+}
+
+.icon-set-lg {
+    margin-bottom: 2rem;
 }
 
 .icon-lg {
@@ -184,6 +196,7 @@ h2 {
 h3{
     font-size: var(--fs-400);
     font-family: var(--ff-body);
+
 }
 /*Changed card-body background color to --color-neutral: 21-Feb-23*/
 .card-body {
@@ -200,8 +213,9 @@ h3{
     justify-content: start;
     align-items: end;
 }
-.img-lg{
-    border: solid 3px var(--color-neutral-light);
+
+.img-card{
+    border: solid 7px var(--color-img-border);
 }
 
 .card{
@@ -215,6 +229,14 @@ a{
 .last-article{
     margin-bottom: 2rem;
 }
+
+.last-article > a > div {
+    padding: 0;
+}
+
+.last-article > img {
+    padding: 0;
+}
  .last-article-title{
      color: var(--color-neutral-dark);
      font-family: var(--ff-heading);
@@ -223,4 +245,10 @@ a{
  .img-sm{
      height: 70px;
      width: 70px;
+     border: solid 2px var(--color-img-border);
+     margin-right: 1rem;
+ }
+
+ p {
+     font-family: var(--ff-body);
  }
