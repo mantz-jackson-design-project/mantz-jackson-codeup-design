@@ -104,13 +104,15 @@ h1{
 /*Styled large icons 21-FEB-23*/
 .icon-lg {
     color: var(--color-neutral-light);
-    height: 42px;
-    width: 55px;
+    min-height: 53px;
+    min-width: 53px;
+    max-height: 53px;
+    max-width: 53px;
     border: var(--color-neutral-light);
     border-radius: 100%;
-    margin: auto 1rem;
     display: flex;
     justify-content: center;
+    margin: .5rem;
 }
 
 /*I added this while working on a different attempt to use breakpoints with the icon set. Leaving it for now, but this will probably not be needed: 21-FEB-23*/
@@ -120,13 +122,16 @@ h1{
 
 /*Placeholder added 21-FEB-23*/
 .icon-set-lg {
-
 }
 /*Styling for span elements within lg icons added 21-FEB-23*/
 .icon-lg > span{
     align-self: center;
     font-family: var(--ff-heading);
     font-size: var(--fs-200);
+}
+
+.azeban {
+    margin: .5rem;
 }
 
 .icon-set-sm{
@@ -192,3 +197,4 @@ h2 {
 .img-lg{
     border: solid 3px var(--color-neutral-light);
 }
+
