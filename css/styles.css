@@ -59,8 +59,38 @@
 * {
     outline: solid 1px lime;
 }
+/*Changed nav bar font: 21-Feb-23*/
+.nav-container {
+    font-family: var(--ff-body);
+}
 
+/*Styled font for navbar links (<li>'s only) - 'codeup design' is not impacted: 21-Feb-23*/
+li {
+    font-size: var(--fs-300);
+    font-weight: bold;
+}
+
+/*Added background color: 21-Feb-23*/
+body {
+    background-color: var(--color-neutral);
+}
+
+main {
+    background-color: var(--color-neutral);
+}
+
+/*Placeholder: 21-Feb-23*/
+section {
+
+}
+
+/*Changed <h1> font: Added 21-Feb-23*/
 h1{
+    font-family: var(--ff-heading);
+}
+/*Changed sub-text font: Added 21-Feb-23*/
+.hq-location-subheader {
+    font-family: var(--ff-heading);
 }
 
 /*Changed dimensions of logo to fit navbar*/
@@ -74,7 +104,7 @@ h1{
     color: var(--color-neutral-light);
     height: 42px;
     width: 55px;
-    border: #ff7d57;
+    border: var(--color-neutral-light);
     border-radius: 100%;
     margin: auto 1rem;
     display: flex;
@@ -126,12 +156,17 @@ h1{
 .icon-host{
     background: var(--color-host);
 }
-
-
+/*Changed font for <h2> (card headers): 21-Feb-23*/
+h2 {
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+    font-weight: bold;
+}
+/*Changed card-body background color to --color-neutral: 21-Feb-23*/
 .card-body {
     margin: 0;
     padding: .25em;
-    background: none;
+    background-color: var(--color-neutral);;
     justify-content: flex-start;
 }
 .card-body > span{

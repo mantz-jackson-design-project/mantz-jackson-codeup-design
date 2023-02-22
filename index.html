@@ -16,31 +16,32 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid d-flex">
+    <div class="container-fluid d-flex nav-container">
         <a class="navbar-brand" href="#"><img id="codeupLogo" src="assets/logo.png">codeup design</a>
         <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"> </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="nav-ul navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page">
-                        Services
+                    <!--Removed 'active' designator because the active status was distorting the color of 'services', turning it black as opposed to grey.-->
+                    <a class="nav-link" href="#" aria-current="page">
+                        SERVICES
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        Work
+                        WORK
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        Blog
+                        BLOG
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        Contact
+                        CONTACT
                     </a>
                 </li>
 
@@ -48,13 +49,14 @@
         </div>
     </div>
 </nav>
-<main class="container bg-light border">
+<!--Deleted 'bg-light' from <main> in order to allow for CSS background styling: 21-Feb-23-->
+<main class="container border">
     <!--Visual Design Section-->
     <section>
-        <!--Centered <h1> inline using .text-center bootstrap class-->
+        <!--Centered <h1> inline using .text-center bootstrap class: 21-Feb-23-->
         <h1 class="text-center">VISUAL DESIGN & WEB DEVELOPMENT</h1>
-        <!--Centered <p> inline using .text-center bootstrap class-->
-        <p class="text-center"> FROM PARK CITY, UTAH</p>
+        <!--Centered <p> inline using .text-center bootstrap class: 21-Feb-23-->
+        <p class="text-center hq-location-subheader"> FROM PARK CITY, UTAH</p>
         <div class="icon-set-lg d-flex justify-content-center">
             <div class="icon-lg icon-design" id="icon-lg-design">
                 <span>DESIGN</span>
@@ -76,7 +78,8 @@
     <!--Images Section-->
     <section class="row">
         <div class="col-lg-8 col-12">
-            <h2>SELECTED WORK</h2>
+            <!--Centered <h2> inline using .text-center bootstrap class: 21-Feb-23-->
+            <h2 class="text-center">SELECTED WORK</h2>
             <!--Card 1-->
             <article class="card" style="width: 18rem;">
                 <img src="assets/images/apple-ipad.jpg" class="card-img-top img-lg" alt="...">
@@ -101,7 +104,8 @@
 
         </div>
         <div class="col-lg-4 d-none d-lg-block">
-            <h2>THE LAST</h2>
+            <!--Centered <h2> inline using .text-center bootstrap class: 21-Feb-23-->
+            <h2 class="text-center">THE LAST</h2>
             <article>
                 <a href="#"  class="row">
                 <img src="assets/images/mobile-phone.jpg"class="col-4">
