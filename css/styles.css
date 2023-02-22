@@ -17,7 +17,8 @@
     --fw-medium: 500;
     --fw-bold: 700;
     --fw-black: 900;
-
+    /* Added variable fs-200 for smaller font size; used for '.icon-lg > span': Added 21-FEB-23 */
+    --fs-200: .6rem;
     --fs-300: .75rem;
     --fs-400: .875rem;
     --fs-500: 1rem;
@@ -68,11 +69,28 @@ h1{
     width: 35px;
     margin-right: .75rem;
 }
-
+/*Styled large icons 21-FEB-23*/
 .icon-lg {
-    margin: auto .25rem;
     color: var(--color-neutral-light);
+    height: 42px;
+    width: 55px;
+    border: #ff7d57;
+    border-radius: 100%;
+    margin: auto 1rem;
+    display: flex;
+    justify-content: center;
 }
+/*Placeholder added 21-FEB-23*/
+.icon-set-lg {
+
+}
+/*Styling for span elements within lg icons added 21-FEB-23*/
+.icon-lg > span{
+    align-self: center;
+    font-family: var(--ff-heading);
+    font-size: var(--fs-200);
+}
+
 .icon-set-sm{
     height: 100%;
     padding: .25rem 0;
