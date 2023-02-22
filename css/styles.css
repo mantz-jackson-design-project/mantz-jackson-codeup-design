@@ -99,6 +99,8 @@ h1{
     width: 35px;
     margin-right: .75rem;
 }
+
+
 /*Styled large icons 21-FEB-23*/
 .icon-lg {
     color: var(--color-neutral-light);
@@ -110,6 +112,10 @@ h1{
     display: flex;
     justify-content: center;
 }
+.icon-set {
+    padding: 0;
+}
+
 /*Placeholder added 21-FEB-23*/
 .icon-set-lg {
 
