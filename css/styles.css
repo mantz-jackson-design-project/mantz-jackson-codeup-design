@@ -26,6 +26,7 @@
     --fs-700: 1.5rem;
     --fs-800: 2rem;
     --fs-900: 3rem;
+    --fs-1000: 3.5rem;
 
     --fs-logo : var(--fs-700);
     --fs-tagline: var(--fs-400);
@@ -87,10 +88,18 @@ section {
 /*Changed <h1> font: Added 21-Feb-23*/
 h1{
     font-family: var(--ff-heading);
+    font-size: var(--fs-1000);
 }
+
+h2 {
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+}
+
 /*Changed sub-text font: Added 21-Feb-23*/
 .hq-location-subheader {
     font-family: var(--ff-heading);
+    font-size: var(--fs-700);
 }
 
 /*Changed dimensions of logo to fit navbar*/
@@ -120,10 +129,10 @@ h1{
     padding: 0;
 }
 
-/*Placeholder added 21-FEB-23*/
-.icon-set-lg {
-    border: 1pt solid red;
+.icon-lg {
+    border: 4px solid var(--color-neutral-light);
 }
+
 /*Styling for span elements within lg icons added 21-FEB-23*/
 .icon-lg > span{
     align-self: center;
@@ -171,11 +180,7 @@ h1{
     background: var(--color-host);
 }
 /*Changed font for <h2> (card headers): 21-Feb-23*/
-h2 {
-    font-family: var(--ff-body);
-    font-size: var(--fs-400);
-    font-weight: bold;
-}
+
 h3{
     font-size: var(--fs-400);
     font-family: var(--ff-body);
