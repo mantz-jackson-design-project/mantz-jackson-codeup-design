@@ -175,17 +175,17 @@ h2 {
     font-size: var(--fs-400);
     font-weight: bold;
 }
+h3{
+    font-size: var(--fs-400);
+    font-family: var(--ff-body);
+}
 /*Changed card-body background color to --color-neutral: 21-Feb-23*/
 .card-body {
     margin: 0;
     padding: .25em;
-    background-color: var(--color-neutral);;
     justify-content: flex-start;
 }
-.card-body > span{
-    font-size: var(--fs-400);
-    font-family: var(--ff-body);
-}
+
 .project-title{
     padding: 0;
     /* TODO trying to align to bottom of icons */
@@ -198,3 +198,23 @@ h2 {
     border: solid 3px var(--color-neutral-light);
 }
 
+.card{
+    background-color: var(--color-neutral);;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+.last-article{
+    margin-bottom: 2rem;
+}
+ .last-article-title{
+     color: var(--color-neutral-dark);
+     font-family: var(--ff-heading);
+     font-size: var(--fs-700);
+ }
+ .img-sm{
+     height: 70px;
+     width: 70px;
+ }

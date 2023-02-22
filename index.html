@@ -52,7 +52,7 @@
 <!--Deleted 'bg-light' from <main> in order to allow for CSS background styling: 21-Feb-23-->
 <main class="container border">
     <!--Visual Design Section-->
-    <section>
+    <section class="row">
         <!--Centered <h1> inline using .text-center bootstrap class: 21-Feb-23-->
         <h1 class="text-center">VISUAL DESIGN & WEB DEVELOPMENT</h1>
         <!--Centered <p> inline using .text-center bootstrap class: 21-Feb-23-->
@@ -109,38 +109,131 @@
     <section class="row">
         <div class="col-lg-8 col-12">
             <!--Centered <h2> inline using .text-center bootstrap class: 21-Feb-23-->
-            <h2 class="text-center">SELECTED WORK</h2>
+            <h2 class="row text-center">SELECTED WORK</h2>
             <!--Card 1-->
-            <article class="card" style="width: 18rem;">
-                <img src="assets/images/apple-ipad.jpg" class="card-img-top img-lg" alt="...">
-                <div class="card-body row d-flex">
-                    <span class="col-6 project-title">FEATURED PROJECT</span>
-                    <div class=" col-6 icon-set-sm d-flex">
-                        <div class="icon-sm icon-design">
-                            <span>D</span>
-                        </div>
-                        <div class="icon-sm icon-develop">
-                            <span>D</span>
-                        </div>
-                        <div class="icon-sm icon-support">
-                            <span>S</span>
-                        </div>
-                        <div class="icon-sm icon-host">
-                            <span>H</span>
+            <div class="row">
+                <article class="card col-12 col-md-6">
+                    <img src="assets/images/apple-ipad.jpg" class="card-img-top img-lg" alt="...">
+                    <div class="card-body row d-flex">
+                        <h3 class="col-6 project-title">FEATURED PROJECT</h3>
+                        <div class=" col-6 icon-set-sm d-flex">
+                            <div class="icon-sm icon-design">
+                                <span>D</span>
+                            </div>
+                            <div class="icon-sm icon-develop">
+                                <span>D</span>
+                            </div>
+                            <div class="icon-sm icon-support">
+                                <span>S</span>
+                            </div>
+                            <div class="icon-sm icon-host">
+                                <span>H</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
-
+                </article>
+                <article class="card col-12 col-md-6">
+                    <img src="assets/images/macbook.jpg" class="card-img-top img-lg" alt="...">
+                    <div class="card-body row d-flex">
+                        <h3 class="col-6 project-title">FEATURED PROJECT</h3>
+                        <div class=" col-6 icon-set-sm d-flex">
+                            <div class="icon-sm icon-design">
+                                <span>D</span>
+                            </div>
+                            <div class="icon-sm icon-develop">
+                                <span>D</span>
+                            </div>
+                            <div class="icon-sm icon-support">
+                                <span>S</span>
+                            </div>
+                            <div class="icon-sm icon-host">
+                                <span>H</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card col-12 col-md-6">
+                    <img src="assets/images/man.jpg" class="card-img-top img-lg" alt="...">
+                    <div class="card-body row d-flex">
+                        <h3 class="col-6 project-title">FEATURED PROJECT</h3>
+                        <div class=" col-6 icon-set-sm d-flex">
+                            <div class="icon-sm icon-design">
+                                <span>D</span>
+                            </div>
+                            <div class="icon-sm icon-develop">
+                                <span>D</span>
+                            </div>
+                            <div class="icon-sm icon-support">
+                                <span>S</span>
+                            </div>
+                            <div class="icon-sm icon-host">
+                                <span>H</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card col-12 col-md-6">
+                    <img src="assets/images/security.jpg" class="card-img-top img-lg" alt="...">
+                    <div class="card-body row d-flex">
+                        <h3 class="col-6 project-title">FEATURED PROJECT</h3>
+                        <div class=" col-6 icon-set-sm d-flex">
+                            <div class="icon-sm icon-design">
+                                <span>D</span>
+                            </div>
+                            <div class="icon-sm icon-develop">
+                                <span>D</span>
+                            </div>
+                            <div class="icon-sm icon-support">
+                                <span>S</span>
+                            </div>
+                            <div class="icon-sm icon-host">
+                                <span>H</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
+
         <div class="col-lg-4 d-none d-lg-block">
             <!--Centered <h2> inline using .text-center bootstrap class: 21-Feb-23-->
             <h2 class="text-center">THE LAST</h2>
-            <article>
+            <article class="last-article container">
                 <a href="#"  class="row">
-                <img src="assets/images/mobile-phone.jpg"class="col-4">
-                <h3 class="col-8">THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+                    <div class="col-3">
+                        <img src="assets/images/mobile-phone.jpg"class="img-sm">
+
+                    </div>
+                    <div class="col-9">
+                        <h3 class="last-article-title">THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+
+                    </div>
                 </a>
+            </article>
+            <article class="last-article container">
+                <a href="#"  class="row">
+                    <div class="col-3">
+                        <img src="assets/images/head.jpg"class="img-sm">
+                    </div>
+                    <div class="col-9">
+                        <h3 class="last-article-title">NIBBLER AWESOME WEBSITE TESTING</h3>
+                    </div>
+                </a>
+            </article>
+            <article class="last-article container">
+                <a href="#"  class="row">
+                    <div class="col-3">
+                        <img src="assets/images/ipad.jpg"class="col-3 img-sm">
+
+                    </div>
+                    <div class="col-9">
+                        <h3 class="last-article-title">HOW TO GET GOOGLE TO LIKE YOU</h3>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <h3>LAST TWEET</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis dolore, dolores ducimus eveniet iste laboriosam magni maxime nemo nobis omnis placeat quis rem velit.</p>
             </article>
         </div>
     </section>
