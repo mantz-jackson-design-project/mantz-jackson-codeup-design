@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -16,13 +16,14 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid d-flex nav-container">
-        <a class="navbar-brand" href="#"><img id="codeupLogo" src="assets/logo.png">codeup design</a>
-        <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid nav-container d-flex">
+        <a href="#"><img id="codeupLogo" src="assets/logo.png" alt="codeup logo"></a>
+        <a class="navbar-brand d-none d-lg-block" href="#">codeup design</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-display="static" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"> </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav-ul navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="navbar-collapse collapse" id="navbarContent">
+            <ul class="navbar-nav nav-ul">
                 <li class="nav-item">
                     <!--Removed 'active' designator because the active status was distorting the color of 'services', turning it black as opposed to grey.-->
                     <a class="nav-link" href="#" aria-current="page">
@@ -44,38 +45,37 @@
                         CONTACT
                     </a>
                 </li>
-
             </ul>
         </div>
     </div>
 </nav>
 <!--Deleted 'bg-light' from <main> in order to allow for CSS background styling: 21-Feb-23-->
-<main class="container border">
+<main class="container">
     <!--Visual Design Section-->
     <section class="row">
         <!--Centered <h1> inline using .text-center bootstrap class: 21-Feb-23-->
-        <h1 class="text-center">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+        <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
         <!--Centered <p> inline using .text-center bootstrap class: 21-Feb-23-->
-        <p class="text-center hq-location-subheader"> FROM PARK CITY, UTAH</p>
+        <p id="hq-location-subheader"> FROM PARK CITY, UTAH</p>
 
         <div class="container">
             <div class="row">
                 <div class="col"></div>
                 <div class="col-5 col-md-6">
                     <div class="icon-set-lg d-flex justify-content-center flex-wrap">
-                        <div class="azeban icon-lg icon-design" id="icon-lg-design">
+                        <div class="icon-lg icon-design">
                             <span>DESIGN</span>
                         </div>
 
-                        <div class="azeban icon-lg icon-develop" id="icon-lg-develop">
+                        <div class="icon-lg icon-develop">
                             <span>DEVELOP</span>
                         </div>
 
-                        <div class="azeban icon-lg icon-support" id="icon-lg-support">
+                        <div class="icon-lg icon-support">
                             <span>SUPPORT</span>
                         </div>
 
-                        <div class="azeban icon-lg icon-host" id="icon-lg-host">
+                        <div class="icon-lg icon-host">
                             <span>HOST</span>
                         </div>
                     </div>
@@ -84,8 +84,7 @@
             </div>
         </div>
 
-
-        <hr>
+        <hr class="d-none d-md-block">
 
     </section>
 
@@ -93,14 +92,14 @@
     <section class="row">
         <div class="col-lg-8 col-12">
             <!--Centered <h2> inline using .text-center bootstrap class: 21-Feb-23-->
-            <h2 class="row text-center d-flex justify-content-center">SELECTED WORK</h2>
+            <h2>SELECTED WORK</h2>
             <!--Card 1-->
             <div class="row">
                 <article class="card col-12 col-md-6">
-                    <img src="assets/images/apple-ipad.jpg" class="img-card" alt="...">
-                    <div class="card-body row d-flex">
+                    <img src="assets/images/apple-ipad.jpg" class="img-card" alt="laptop with green apples next to it">
+                    <div class="card-body row">
                         <h3 class="col-6 project-title">FEATURED PROJECT</h3>
-                        <div class=" col-6 icon-set-sm d-flex">
+                        <div class=" col-6 icon-set-sm">
                             <div class="icon-sm icon-design">
                                 <span>D</span>
                             </div>
@@ -117,10 +116,10 @@
                     </div>
                 </article>
                 <article class="card col-12 col-md-6">
-                    <img src="assets/images/macbook.jpg" class="img-card" alt="...">
-                    <div class="card-body row d-flex">
+                    <img src="assets/images/macbook.jpg" class="img-card" alt="3 laptops sitting on a desk">
+                    <div class="card-body row">
                         <h3 class="col-6 project-title">FEATURED PROJECT</h3>
-                        <div class=" col-6 icon-set-sm d-flex">
+                        <div class=" col-6 icon-set-sm">
                             <div class="icon-sm icon-design">
                                 <span>D</span>
                             </div>
@@ -137,10 +136,10 @@
                     </div>
                 </article>
                 <article class="card col-12 col-md-6">
-                    <img src="assets/images/man.jpg" class="img-card" alt="...">
-                    <div class="card-body row d-flex">
+                    <img src="assets/images/man.jpg" class="img-card" alt="a man with glasses staring into the abyss">
+                    <div class="card-body row">
                         <h3 class="col-6 project-title">FEATURED PROJECT</h3>
-                        <div class=" col-6 icon-set-sm d-flex">
+                        <div class=" col-6 icon-set-sm">
                             <div class="icon-sm icon-design">
                                 <span>D</span>
                             </div>
@@ -157,10 +156,10 @@
                     </div>
                 </article>
                 <article class="card col-12 col-md-6">
-                    <img src="assets/images/security.jpg" class="img-card" alt="...">
-                    <div class="card-body row d-flex">
+                    <img src="assets/images/security.jpg" class="img-card" alt="computer screen with the word security on display">
+                    <div class="card-body row">
                         <h3 class="col-6 project-title">FEATURED PROJECT</h3>
-                        <div class=" col-6 icon-set-sm d-flex">
+                        <div class=" col-6 icon-set-sm">
                             <div class="icon-sm icon-design">
                                 <span>D</span>
                             </div>
@@ -180,35 +179,31 @@
         </div>
 
         <div class="col-lg-4 d-none d-lg-block">
-            <!--Centered <h2> inline using .text-center bootstrap class: 21-Feb-23-->
-            <h2 class="text-center">THE LAST</h2>
-            <article class="last-article container">
+            <h2>THE LAST</h2>
+            <article class="container last-article">
                 <a href="#"  class="row">
                     <div class="col-auto">
-                        <img src="assets/images/mobile-phone.jpg"class="img-sm">
-
+                        <img src="assets/images/mobile-phone.jpg" class="last-article-img" alt="a mobile phone">
                     </div>
                     <div class="col">
                         <h3 class="last-article-title">THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
-
                     </div>
                 </a>
             </article>
-            <article class="last-article container">
+            <article class="container last-article">
                 <a href="#"  class="row">
                     <div class="col-auto">
-                        <img src="assets/images/head.jpg"class="img-sm">
+                        <img src="assets/images/head.jpg" class="last-article-img" alt="a wireframe image of a human head">
                     </div>
                     <div class="col">
                         <h3 class="last-article-title">NIBBLER AWESOME WEBSITE TESTING</h3>
                     </div>
                 </a>
             </article>
-            <article class="last-article container">
+            <article class="container last-article">
                 <a href="#"  class="row">
                     <div class="col-auto">
-                        <img src="assets/images/ipad.jpg"class="col-3 img-sm">
-
+                        <img src="assets/images/ipad.jpg" class="last-article-img" alt="person holding an ipad with rainbow colors on display">
                     </div>
                     <div class="col">
                         <h3 class="last-article-title">HOW TO GET GOOGLE TO LIKE YOU</h3>
