@@ -125,9 +125,15 @@ a{
     display: flex;
     justify-content: center;
     margin: .5rem;
+    transition: scale 500ms ease;
 }
 
-.icon-lg > span{
+.icon-lg:hover {
+    scale: 1.1;
+}
+
+.icon-lg > span {
+    color: var(--color-neutral-light);
     font-family: var(--ff-heading);
     font-size: var(--fs-icon-lg);
     align-self: center;
@@ -179,6 +185,11 @@ a{
     background-color: var(--color-neutral);
     border: none;
     margin-bottom: .5rem;
+    transition: scale 500ms ease;
+}
+
+.card:hover {
+    scale: 1.05;
 }
 
 .card-img{
@@ -190,10 +201,15 @@ a{
     margin: 0;
     padding: 0;
     justify-content: flex-start;
+    color: var(--color-neutral-dark);
 }
 
 .last-article{
     margin-bottom: var(--margin-bottom);
+}
+
+.last-article:hover {
+    background: var(--color-img-border);
 }
 
 .last-article > a > div {
@@ -212,4 +228,13 @@ a{
      border: solid 2px var(--color-img-border);
      margin-right: 1rem;
      padding: 0;
+ }
+
+ .navbar-nav {
+     text-align: right;
+     margin-top: .25rem;
+ }
+
+ .nav-link:hover {
+     background: var(--color-img-border);
  }
